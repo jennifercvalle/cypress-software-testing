@@ -55,7 +55,6 @@ describe('Login - testes básicos', () => {
 
         cy.get('[data-test="nav-sign-out"]').click()
         cy.url().should('include', '/login')
-
     })
     it('Login com campos vazios', () => {
         cy.visit('https://practicesoftwaretesting.com/auth/login')
@@ -66,6 +65,4 @@ describe('Login - testes básicos', () => {
         cy.contains('Email is required').should('be.visible')
         cy.contains('Password is required').should('be.visible')
     })
-
-
 })

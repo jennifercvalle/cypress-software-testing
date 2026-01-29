@@ -13,6 +13,4 @@ it('Permitir o cadastro no sistema', () => {
         cy.get('input[id="password"]').type('testandO123@')
         cy.get('button[type="submit"]').click()
         cy.url().should('include','/login')
-
-
 })
