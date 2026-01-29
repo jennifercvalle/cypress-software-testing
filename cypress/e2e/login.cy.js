@@ -9,7 +9,7 @@ describe('Login - testes básicos', () => {
         cy.contains('Invalid email or password').should('be.visible')
     })
 
-    it.only('Login com email formato invalido', () => {
+    it.only('Login com email formato inválido', () => {
         cy.visit('https://practicesoftwaretesting.com/auth/login')
         cy.get('input[id=email]').type('testejusssara.com')
         cy.get('input[id=password]').type('-123456789')
